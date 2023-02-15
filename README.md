@@ -1,2 +1,2 @@
 # person_Dj
-aplicacion de la arquitectura MVC con el framework Django
+aplicacion aplicando la arquitectura MVC con el framework Django haciendo un CRUD de una lista de personas 
