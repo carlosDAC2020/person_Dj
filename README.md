@@ -20,6 +20,6 @@ aplicacion aplicando la arquitectura MVC con el framework Django haciendo un CRU
 
          `$ py manage.py migrate`
 
-- Ejecutsr el proyecto :sunglasses:
+- Ejecutsr el proyecto :muscle: :sunglasses: 
  
         `$ py manage.py runserver`
