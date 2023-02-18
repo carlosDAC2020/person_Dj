@@ -1,28 +1,39 @@
 DE DESPLIEGUE EN RENDER 
 
-1 secret_key 
+1 secret_key (setings.py)
     importa la biblioteca os
     pega lo que se ubica en la documentacion de render 
 
-2 debug
+2 debug (setings.py)
     pega lo de la documentacion 
 
-3 ALLOWED_HOSTS
+3 ALLOWED_HOSTS (setings.py)
     copia la direccion externa de render en la documentacion 
     valioda de que si existe la añades al la lista de ALLOWED_HOSTS
 
-4 base de datos postgres en el server 
+4 base de datos postgres en el server (setings.py) 
     instalamos los modulos dj-database-url  y psycopg2-binary que sale en la documentacion 
     los llamamos en el setings 
     cambiamos los parametros de DATABASES por los de la documentacion 
 
-5 servir archivos estaticos 
+5 servir archivos estaticos (setings.py)
     instalamos el modulo whitenoise[brotli]
     añadimos en MIDDLEWARE lo q esta en la documentacion 
     añadimos la configurcion des lues de STATIC_URL que esta en la documentacion
 
-6 comandos de la nube
+6 comandos de la nube (archivos a crear )
     creamos un archivo buld.sh
     aplicamos el comando chmod a+x build.sh en git bash
     instalamos el modulo gunicorn
     actualizamos el archivo de requerimientos con pip freeze > requirements.txt
+
+7 variables de entorno (render)
+    - en la donfiguracion inicial del proyecto ponemos los siguiente 
+        Build Command : build.sh para que haga todos los comandos correspondientes 
+        Start Command : gunicorn config.wsgi (esto por la forma en que creo el proyecto)
+
+    - creamos una base de datos desde render de postgres
+    
+    - en environmnet creamos las siguientes variavles 
+        PYTHON_VERSION : valor que tenga el entorno  (esto para evitar inconvenientes la hota de instalkar las dependecias con pip y todo se maneje con dicha version)
+        DATABASE_URL : la url interna de la base de datos que creaste para conectar el proyecto
