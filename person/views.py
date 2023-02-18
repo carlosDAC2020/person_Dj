@@ -17,9 +17,6 @@ def add(request):
     
 
     
-
-
-
 def update(request, id_person):
     if request.method=="GET":
         return render(request, "person/detail.html",{
