@@ -1,0 +1,28 @@
+DE DESPLIEGUE EN RENDER 
+
+1 secret_key 
+    importa la biblioteca os
+    pega lo que se ubica en la documentacion de render 
+
+2 debug
+    pega lo de la documentacion 
+
+3 ALLOWED_HOSTS
+    copia la direccion externa de render en la documentacion 
+    valioda de que si existe la añades al la lista de ALLOWED_HOSTS
+
+4 base de datos postgres en el server 
+    instalamos los modulos dj-database-url  y psycopg2-binary que sale en la documentacion 
+    los llamamos en el setings 
+    cambiamos los parametros de DATABASES por los de la documentacion 
+
+5 servir archivos estaticos 
+    instalamos el modulo whitenoise[brotli]
+    añadimos en MIDDLEWARE lo q esta en la documentacion 
+    añadimos la configurcion des lues de STATIC_URL que esta en la documentacion
+
+6 comandos de la nube
+    creamos un archivo buld.sh
+    aplicamos el comando chmod a+x build.sh en git bash
+    instalamos el modulo gunicorn
+    actualizamos el archivo de requerimientos con pip freeze > requirements.txt
