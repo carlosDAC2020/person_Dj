@@ -5,6 +5,10 @@ aplicacion aplicando la arquitectura MVC con el framework Django haciendo un CRU
 - Carlos Daniel Agamez Palomino 
 - Harold Styven Lagares De Voz
 
+### Desplegado en :
+
+-  [https://person-list.onrender.com/person/](https://person-list.onrender.com/person/ "")
+
 ![Como se ve la app](/Captura.PNG)
 
 ### Pasos de ejecucion
